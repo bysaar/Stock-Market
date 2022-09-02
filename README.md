@@ -113,7 +113,7 @@ If the offer is valid it is added to the Bids/Asks array.
 
 
 ## Run Instructions
-Open terminal and navigate to the folder and execute:
+Open the terminal and navigate to the folder, then execute:
 
 - `make`
 
