@@ -2,6 +2,8 @@
 
 This is the final project of the course: "Computer Networks Design Laboratory".
 
+
+
 <sup>*</sup> **Disclaimer**: Stocks names and information used in this project are taken randomly from Apple&#8482; Stocks App.
 
 ## Introduction:
@@ -14,7 +16,9 @@ While the first data stream should be unique, the second data stream is generic 
 
 
 ## Overview
-The protocol resembles a real-time functioning stock market in the client-server model.
+The protocol resembles a real-time functioning stock market platform in the client-server model.
+
+Each client is connected to the server with a TCP connection for conducting instantaneous operations and as well registered to a bid-ask updates multicast group over a UDP connection.
 
 ### Type Of Messages:
 The protocol includes 4 different sections of messages which are as follows:
