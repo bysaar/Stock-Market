@@ -2,6 +2,8 @@
 
 This is the final project of the course: "Computer Networks Design Laboratory".
 
+<sup>*</sup> **Disclaimer**: Stocks names and information used in this project are taken randomly from Apple&#8482; Stocks App.
+
 ## Introduction:
 
 The idea behind this project is to implement a communication protocol that enables a digital stock-market platform.
