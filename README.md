@@ -113,10 +113,17 @@ If the offer is valid it is added to the Bids/Asks array.
 
 
 ## Run Instructions
-  ....
-  ...
-  ..
-  .
+Open terminal and navigate to the folder and execute:
+
+- `make`
+
+- Server: `./stockserver <port>`
+
+- Client: `./stockclient <ip_address> <port>`
+
+> Server side should be running first
+
+> IP address and port arguments should match the stock server
 
 ## Screenshots
 
@@ -124,21 +131,17 @@ If the offer is valid it is added to the Bids/Asks array.
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/90688449/188040595-a82b8b85-22c8-4959-9de2-55b4f2a5b615.png">
 
 
-
 > Captured 'Registration Request' and 'Login Attempt' messages on Wireshark:
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/90688449/188040668-d898f1df-405a-4ce4-a727-88d4242105c8.png">
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/90688449/188040719-ad175528-f447-4ff5-a162-1111f46ae1a1.png">
-
 
 
 > Investment portfolio example:
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/90688449/188040893-b77f50a6-eeb1-44be-972d-5bcaae18a5a0.png">
 
 
-
 > Multicast offers update example:
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/90688449/188040984-786b25f3-50b6-4b13-aa0f-b157067da13b.png">
-
 
 
 > Captured multicast offers update message on Wireshark:
@@ -146,14 +149,6 @@ If the offer is valid it is added to the Bids/Asks array.
 
 
 
-
 > An example of offering a transaction:
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/90688449/188041191-fc265470-6f26-45c2-bf67-10c1dfdcaf45.png">
-
-
-
-
-
-
-
 
