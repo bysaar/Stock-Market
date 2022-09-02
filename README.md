@@ -11,8 +11,11 @@ The separation of the data streams over two different channels is necessary beca
 While the first data stream should be unique, the second data stream is generic and the same for every user, therefore in order to achieve more scalability the second data stream should be transmitted as multicast.
 
 
-## Overview:
-The protocol resembles a real-time functioning stock market in the client-server model and includes the following messages:
+## Overview
+The protocol resembles a real-time functioning stock market in the client-server model.
+
+### Type Of Messages:
+The protocol includes 4 different sections of messages which are as follows:
 
 | Code | Message Description | Section | Direction
 | :----: | :----: | :----: | :----: |
@@ -31,14 +34,22 @@ The protocol resembles a real-time functioning stock market in the client-server
 | **V** | Valid Offer | Transaction | Client <-- Server |
 | **I** | Invalid Offer | Transaction | Client <-- Server |
 
-## Functionality:
+### Design:
+- Server-Side State Machine:
+<img width="573" alt="צילום מסך 2022-09-02 ב-4 20 25" src="https://user-images.githubusercontent.com/90688449/188038884-a79b8fc0-62cd-4494-979e-35c4fcfb9afb.png">
+
+- Client-Side State Machine:
+<img width="648" alt="צילום מסך 2022-09-02 ב-4 22 05" src="https://user-images.githubusercontent.com/90688449/188038980-8fe84ce2-b854-4cc5-a416-f42aa55e956e.png">
+
+
+## Functionality
 
 ### Authentication: (Over TCP)
-Each client has his own private stock portfolio that can be accessed only by him using a unique username and password.
+Each client has his own private investment portfolio that can be accessed only by him using a unique username and password.
 
 Authentication is divided into two steps:
 #### Step 1 - Registration:
-A new client sends a 'Registration Request' message that contains: username, password and amount of money to assign to the stock portfolio.
+A new client sends a 'Registration Request' message that contains: username, password and amount of money to assign to the investment portfolio.
 
 An 'Auth. Acknowledgment' message is sent if the username is free to use and the account created successfully, otherwise 'Auth. Failed' message is sent.
 
@@ -72,7 +83,7 @@ The server will check if the offer is valid and will reply with 'Valid Offer' me
 
 If the offer is valid it is added to the Bids/Asks array.
 
-## Networking:
+## Networking
 - TCP - A reliable TCP connection is implemented with every client entering the server independently.
 
 > The maximum number of clients is set to 50.
@@ -91,3 +102,50 @@ If the offer is valid it is added to the Bids/Asks array.
 - Both cases of a server or a client shutting down unexpectedly are handled.
 
 - Our implementation used Select() function and multi-threads.
+
+
+## Run Instructions
+  ....
+  ...
+  ..
+  .
+
+## Screenshots
+
+> An example of registration and login to the server:
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/90688449/188040595-a82b8b85-22c8-4959-9de2-55b4f2a5b615.png">
+
+
+
+> Captured 'Registration Request' and 'Login Attempt' messages on Wireshark:
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/90688449/188040668-d898f1df-405a-4ce4-a727-88d4242105c8.png">
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/90688449/188040719-ad175528-f447-4ff5-a162-1111f46ae1a1.png">
+
+
+
+> Investment portfolio example:
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/90688449/188040893-b77f50a6-eeb1-44be-972d-5bcaae18a5a0.png">
+
+
+
+> Multicast offers update example:
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/90688449/188040984-786b25f3-50b6-4b13-aa0f-b157067da13b.png">
+
+
+
+> Captured multicast offers update message on Wireshark:
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/90688449/188041085-c82080c5-53ac-42b5-a745-e1a6040fbcff.png">
+
+
+
+
+> An example of sending a buying offer:
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/90688449/188041191-fc265470-6f26-45c2-bf67-10c1dfdcaf45.png">
+
+
+
+
+
+
+
+
