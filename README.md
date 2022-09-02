@@ -121,9 +121,9 @@ Open terminal and navigate to the folder and execute:
 
 - Client: `./stockclient <ip_address> <port>`
 
-> Server side should be running first
+> Server side should be running first.
 
-> IP address and port arguments should match the stock server
+> IP address and port arguments should match the stock server.
 
 ## Screenshots
 
