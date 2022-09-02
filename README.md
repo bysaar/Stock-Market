@@ -139,7 +139,7 @@ If the offer is valid it is added to the Bids/Asks array.
 
 
 
-> An example of sending a buying offer:
+> An example of offering a transaction:
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/90688449/188041191-fc265470-6f26-45c2-bf67-10c1dfdcaf45.png">
 
 
