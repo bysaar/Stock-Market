@@ -20,10 +20,12 @@ The protocol resembles a real-time functioning stock market platform in the clie
 
 Each client is connected to the server with a TCP connection for conducting instantaneous operations and as well registered to a bid-ask updates multicast group over a UDP connection.
 
-### Type Of Messages:
-The protocol includes 4 different sections of messages which are as follows:
+<img width="768" alt="image" src="https://user-images.githubusercontent.com/90688449/188235394-df8cf235-9d0e-4398-ba8b-75eabf6bb272.png">
 
-| Code | Message Description | Section | Direction
+### Type Of Messages:
+The protocol includes 4 different types of messages which are described as follows:
+
+| Code | Message Description | Type | Direction
 | :----: | :----: | :----: | :----: |
 | **R** | Registration Request | Authentication | Client --> Server |
 | **L** | Login Attempt | Authentication | Client --> Server |
