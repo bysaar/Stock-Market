@@ -1,8 +1,5 @@
 # Stock-Market
-
-This is the final project of the course: "Computer Networks Design Laboratory".
-
-
+This is my final project for the Computer Networks Design Laboratory and it includes socket programming and a protocol design.
 
 <sup>*</sup> **Disclaimer**: Stocks names and information used in this project are taken randomly from Apple&#8482; Stocks App.
 
