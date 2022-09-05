@@ -5,7 +5,7 @@ This is my final project for the Computer Networks Design Laboratory and it incl
 
 ## Introduction:
 
-The idea behind this project is to implement a communication protocol that enables a digital stock-market platform.
+The idea behind this project is to design and implement a communication protocol that enables a digital stock trading platform.
 In order to do so, it should support an instant communication channel for conducting instantaneous operations (eg. Buy/Sell) and in addition, a second communication channel for market database updates (eg. current prices, availability, etc).
 
 The separation of the data streams over two different channels is necessary because of the protocol's scalability.
