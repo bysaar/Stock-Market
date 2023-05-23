@@ -1,2 +1,2 @@
 # Stock-Market
-Computer Networks Design Laboratory final project.
+Computer Networks Design Laboratory - final project.
